@@ -1,0 +1,78 @@
+/* Organizar productos en una cuadrícula de 5 columnas, con diferentes  espacios y el  margen entre el navbar */
+.ropa-oversize {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Organizador */
+    gap: 20px; /* Espacio entre cada producto */
+    padding: 40px 10%; /* Espacio interno */
+    background-color: #e2dfdf;
+    margin-top: 90px;
+}
+  
+.producto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+  
+.producto img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+  
+.producto h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+  
+.producto p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.producto:hover {
+    transform: scale(1.05);
+}
+  
+.botones {
+    display: flex;
+    justify-content: space-between;  /* Espacia los botones uniformemente */
+    align-items: center;
+    padding: 10px 35px;  /*Añade espaciado interno para centrarlo mejor*/
+    margin-top: 10px;
+}
+  
+.btn-comprar {
+    background-color: seagreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+  
+.btn-comprar:hover {
+    background-color: darkgreen;
+}
+  
+.btn-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: seagreen;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+  
+.btn-icon:hover {
+    color: darkgreen;
+}
+  
