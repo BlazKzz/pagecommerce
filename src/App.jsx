@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Componentes/Navbar/Navbar'
 import Ropaoversize from './Productos/Oversize/Ropaoversize'
+import Footer from './Footer/Footer'
 
 function App() {
   return(
@@ -13,6 +14,7 @@ function App() {
       imagenSrc4="./public/Poloversize/Captura4.jpg" imagenAlt4="captura4" 
       imagenSrc5="./public/Poloversize/Captura5.jpg" imagenAlt5="captura5" 
       />
+      <Footer />
     </>
   )
 }

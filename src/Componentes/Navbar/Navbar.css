@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,7 +50,7 @@
     color: #ddd;
     transition: color 0.3s ease;
   }
-
+/* Fin Sombras para un efecto más suave */
 .search-bar {
     flex: 1;
     display: flex;
@@ -78,5 +78,30 @@
     margin-left: 10px;
     cursor: pointer;
 }
-
-
+/* Css para los menus de los iconos */
+.user-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+/* Fin Css para los menus de los iconos */

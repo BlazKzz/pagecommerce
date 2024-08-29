@@ -1,0 +1,50 @@
+.main-footer {
+    background-color: #f9f9f9; 
+    padding: 20px;               
+    color: #333;         
+}
+  
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;  
+    padding: 20px; /* Espacio */
+}
+  
+.row {
+    display: flex; 
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a la pantalla */
+    justify-content: space-between; 
+}
+  
+.col {
+    flex-basis: 30%; 
+    margin: 20px; 
+}
+/* Quitar los puntos de la lista,padding y margen*/
+.listado {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+ /* FIN*/
+  
+.listado li {
+    margin-bottom: 10px; 
+}
+  
+.listado li:last-child {
+    margin-bottom: 0; 
+}
+  
+hr {
+    border: none; 
+    border-top: 1px solid #ccc; 
+    margin: 20px 0; 
+}
+/* copyright */
+.col-sm {
+    font-size: 14px; 
+    color: #666; 
+    text-align: center; 
+}
+/* Fin copyright */
