@@ -1,5 +1,8 @@
 import React from 'react'
 import './Navbar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+
 const Navbar = () => {
   return(
     <header className="header">
@@ -15,6 +18,8 @@ const Navbar = () => {
             <a href="/">Descubre</a>
             <a href="/">Servicios</a>
             <a href="/">Contacto</a>
+            <button className="navbar-btn"><FontAwesomeIcon icon={faUser} /></button>
+            <button className="navbar-btn"><FontAwesomeIcon icon={faShoppingCart} /></button>
         </nav>
     </header>
   )
