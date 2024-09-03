@@ -84,7 +84,7 @@
     display: inline-block;
   }
   
-  .dropdown-menu {
+.dropdown-menu {
     display: block;
     position: absolute;
     right: 0;
@@ -92,16 +92,16 @@
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 1;
-  }
+}
   
-  .dropdown-menu a {
+.dropdown-menu a {
     display: block;
     padding: 8px 12px;
     text-decoration: none;
     color: black;
-  }
+}
   
-  .dropdown-menu a:hover {
+.dropdown-menu a:hover {
     background-color: #f1f1f1;
-  }
+}
 /* Fin Css para los menus de los iconos */
