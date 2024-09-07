@@ -9,29 +9,30 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
-
-.logo {
+  }
+  
+  .logo {
     font-size: 32px;
     color: #fff;
     font-weight: 700;
-    
-}
-
-.navbar a {
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .navbar a {
     position: relative;
     font-size: 18px;
     color: #fff;
     font-weight: 500;
     margin-left: 40px;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-}
+  }
   
-.navbar a::before {
+  .navbar a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -40,26 +41,26 @@
     height: 2px;
     background: #fff;
     transition: .3s;
-}
-
-.navbar a:hover::before {
+  }
+  
+  .navbar a:hover::before {
     width: 100%;
-}
-/* Sombras para un efecto más suave */
-.navbar a:hover {
+  }
+  
+  .navbar a:hover {
     color: #ddd;
     transition: color 0.3s ease;
   }
-/* Fin Sombras para un efecto más suave */
-.search-bar {
+  
+  .search-bar {
     flex: 1;
     display: flex;
     justify-content: center;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-.search-bar input {
+  }
+  
+  .search-bar input {
     width: 100%;
     max-width: 360px;
     padding: 10px;
@@ -67,9 +68,9 @@
     border: none;
     outline: none;
     text-align: center;
-}
-
-.navbar-btn {
+  }
+  
+  .navbar-btn {
     background: none;
     border: none;
     width: 40px;
@@ -77,14 +78,14 @@
     color: rgb(255, 255, 255);
     margin-left: 10px;
     cursor: pointer;
-}
-/* Css para los menus de los iconos */
-.user-menu {
+  }
+  
+  .user-menu {
     position: relative;
     display: inline-block;
   }
   
-.dropdown-menu {
+  .dropdown-menu {
     display: block;
     position: absolute;
     right: 0;
@@ -92,16 +93,51 @@
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 1;
-}
+  }
   
-.dropdown-menu a {
+  .dropdown-menu a {
     display: block;
     padding: 8px 12px;
     text-decoration: none;
     color: black;
-}
+  }
   
-.dropdown-menu a:hover {
+  .dropdown-menu a:hover {
     background-color: #f1f1f1;
-}
-/* Fin Css para los menus de los iconos */
+  }
+  
+  /* Media Queries */
+  
+  /* Small screens (max-width: 768px) */
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar a {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    .search-bar {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  /* Extra small screens (max-width: 480px) */
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px;
+    }
+    .logo {
+      font-size: 24px;
+    }
+    .navbar a {
+      font-size: 16px;
+    }
+    .search-bar input {
+      max-width: 200px;
+    }
+  }
