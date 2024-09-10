@@ -1,106 +1,85 @@
-/* Global Styles */
+/* Estilo global */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Fin Estilo global */
+  
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+.main-footer {
+  background-color: #f9f9f9;
+  padding: 10px;
+  color: #333;
+  text-align: center;
+ }
+   
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+   
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+.col {
+  flex-basis: 20%;
+  margin: 20px;
+} 
+  
+.listado {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+  
+.listado li {
+  margin-bottom: 12px;
+}
+  
+.listado li a {
+  color: black;
+}
+  
+.listado li:last-child {
+  margin-bottom: 0;
+}
+    
+hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 10px 0;
+}
+    
+.col-sm {
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  /* Footer Styles */
-  
-  .main-footer {
-    background-color: #f9f9f9;
-    padding: 10px;
-    color: #333;
-    text-align: center;
-  }
-  
-  /* Container Styles */
-  
+@media (max-width: 768px) {
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 5px;
+    max-width: 90%;
   }
-  
-  /* Row Styles */
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  /* Column Styles */
-  
   .col {
-    flex-basis: 20%;
-    margin: 20px;
+    flex-basis: 40%;
   }
-  
-  /* List Styles */
-  
-  .listado {
-    list-style: none;
-    padding: 10px;
-    margin: 0;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%;
   }
-  
-  .listado li {
-    margin-bottom: 12px;
+  .col {
+    flex-basis: 60%;
   }
-  
-  .listado li a {
-    color: black;
-  }
-  
-  .listado li:last-child {
-    margin-bottom: 0;
-  }
-  
-  /* Horizontal Rule Styles */
-  
-  hr {
-    border: none;
-    border-top: 2px solid #ccc;
-    margin: 10px 0;
-  }
-  
-  /* Copyright Styles */
-  
-  .col-sm {
-    font-size: 15px;
-    color: #666;
-    text-align: center;
-  }
-  
-  /* Media Queries */
-  
-  /* Small screens (max-width: 768px) */
-  
-  @media (max-width: 768px) {
-    .container {
-      max-width: 90%;
-    }
-    .col {
-      flex-basis: 40%;
-    }
-  }
-  
-  /* Extra small screens (max-width: 480px) */
-  
-  @media (max-width: 480px) {
-    .container {
-      max-width: 95%;
-    }
-    .col {
-      flex-basis: 60%;
-    }
-  }
+}

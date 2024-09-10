@@ -1,128 +1,120 @@
-/* Organizar productos en una cuadrícula de 5 columnas, con diferentes espacios y el margen entre el navbar */
-
 .ropa-oversize {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Organizador */
-    gap: 20px; /* Espacio entre cada producto */
-    padding: 40px 10%; /* Espacio interno */
-    background-color: #e2dfdf;
-    margin-top: 90px;
-  }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Organizador */
+  gap: 20px; /* Espacio entre cada producto */
+  padding: 40px 10%; /* Espacio interno */
+  background-color: #e2dfdf;
+  margin-top: 90px;
+}
   
-  .producto {
-    background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    text-align: center;
-    transition: transform 0.3s ease; /* Transición suave */
-  }
+.producto {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  transition: transform 0.3s ease; /* Transición suave */
+}
   
-  .producto img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-  }
+.producto img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
   
-  .producto h3 {
-    font-size: 18px;
-    margin: 15px 0 10px;
-  }
+.producto h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
   
-  .producto p {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-  }
+.producto p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
   
-  .producto:hover {
-    transform: scale(1.05);
-  }
+.producto:hover {
+  transform: scale(1.05);
+}
   
-  .botones {
-    display: flex;
-    justify-content: space-between; /* Espacia los botones uniformemente */
-    align-items: center;
-    padding: 10px 35px; /* Añade espaciado interno para centrarlo mejor */
-    margin-top: 10px;
-  }
+.botones {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 35px; 
+  margin-top: 10px;
+}
   
-  .btn-comprar {
-    background-color: seagreen;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: background-color 0.3s ease;
-  }
+.btn-comprar {
+  background-color: seagreen;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
   
-  .btn-comprar:hover {
-    background-color: darkgreen;
-  }
+.btn-comprar:hover {
+  background-color: darkgreen;
+}
   
-  .btn-icon {
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: seagreen;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: seagreen;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
   
-  .btn-icon:hover {
-    color: darkgreen;
-  }
+.btn-icon:hover {
+  color: darkgreen;
+}
   
-/* Media Queries */
-
-/* Small screens (max-width: 768px) */
-
 @media (max-width: 768px) {
-    .ropa-oversize {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-      padding: 30px 10%;
-    }
-    .producto {
-      font-size: 14px;
-    }
-    .botones {
-      padding: 10px 20px;
-      flex-direction: column; /* Cambia la dirección de los botones a columna */
-    }
-    .btn-icon {
-      margin-bottom: 10px; /* Agrega un margen inferior a los iconos */
-    }
-    .producto img {
-      width: 80%; /* Reduce el ancho de la imagen a 80% */
-      height: auto;
-    }
+  .ropa-oversize {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 30px 10%;
   }
-  
-  /* Extra small screens (max-width: 480px) */
-  
-  @media (max-width: 480px) {
-    .ropa-oversize {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      padding: 20px 10%;
-    }
-    .producto {
-      font-size: 12px;
-    }
-    .botones {
-      padding: 10px 15px;
-      flex-direction: column; /* Cambia la dirección de los botones a columna */
-    }
-    .btn-icon {
-      margin-bottom: 10px; /* Agrega un margen inferior a los iconos */
-    }
-    .producto img {
-      width: 60%; /* Reduce el ancho de la imagen a 60% */
-      height: auto;
-    }
+  .producto {
+    font-size: 14px;
   }
+  .botones {
+    padding: 10px 20px;
+    flex-direction: column; 
+  }
+  .btn-icon {
+    margin-bottom: 10px; 
+  }
+  .producto img {
+    width: 80%; 
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .ropa-oversize {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px 10%;
+  }
+  .producto {
+    font-size: 12px;
+  }
+  .botones {
+    padding: 10px 15px;
+    flex-direction: column; 
+  }
+  .btn-icon {
+    margin-bottom: 10px; 
+  }
+  .producto img {
+  width: 60%; 
+  height: auto;
+  }
+}

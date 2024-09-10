@@ -6,12 +6,12 @@ import { faUser, faShoppingCart, faHeart } from '@fortawesome/free-solid-svg-ico
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(null); // Controla cuál menú está activo
 
-  // Función para manejar el click en el icono de usuario
+  // Usuario
   const toggleUserMenu = () => {
     setActiveMenu(activeMenu === 'user' ? null : 'user'); // Alterna el menú de usuario
   };
 
-  // Función para manejar el click en el icono de carrito
+  // Carrito
   const toggleCartMenu = () => {
     setActiveMenu(activeMenu === 'cart' ? null : 'cart'); // Alterna el menú de carrito
   };
